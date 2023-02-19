@@ -1,0 +1,45 @@
+.selectContainer {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  line-height: 3;
+  background: var(--white-bg);
+  overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid var(--secondary-light-color);
+}
+
+.selectContainer:focus-within {
+  border: 1px solid var(--primary-color);
+}
+.selectContainer select {
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: var(--white-bg);
+  background-image: none;
+  flex: 1;
+  padding: 8px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  font-size: 16px;
+}
+.selectContainer select::-ms-expand {
+  display: none;
+}
+
+/* .selectContainer::after {
+  content: url("/public/icons/arrow-chevron-down.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 16px;
+  background: #ffff;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+.selectContainer::after {
+  color: var(--secondary-light-color);
+} */

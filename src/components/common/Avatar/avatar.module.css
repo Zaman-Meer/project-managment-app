@@ -1,0 +1,27 @@
+.avatar {
+  all: unset;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin: 0 2px;
+
+  cursor: pointer;
+}
+.avatar .badge {
+  position: absolute;
+  left: 15px;
+  bottom: 1px;
+  color: var(--text-white);
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+  padding: 2px 4px;
+  text-align: center;
+}

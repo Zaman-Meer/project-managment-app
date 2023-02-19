@@ -1,0 +1,40 @@
+.iconsWrapper {
+  all: unset;
+  box-sizing: border-box;
+  width: auto;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 0 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.default {
+  background-color: var(--white-bg);
+  border: 1px solid rgba(7, 15, 33, 0.1);
+}
+.default:hover {
+  border: 1px solid rgba(7, 15, 33, 0.5);
+}
+.primary {
+  color: var(--text-white);
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.primary:hover {
+  border: 1px solid var(--primary-color);
+}
+.secondary {
+  color: var(--text-white);
+  background-color: var(--secondary-light-color);
+  border: 1px solid var(--secondary-light-color);
+}
+.secondary:hover {
+  border: 1px solid var(--secondary-light-color);
+}

@@ -1,0 +1,36 @@
+.linkContainer {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: var(--secondary-light-color);
+  background-color: #ffff;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 15px;
+  margin: 2px 0;
+  cursor: pointer;
+}
+.linkContainer:hover {
+  color: #000000;
+  background-color: var(--sidebar-active-item-bg);
+  border-radius: 8px;
+}
+
+.linkContainer .showLabel {
+  margin-left: 16px;
+  transition: var(--tran-05);
+}
+
+.linkContainer .hideLabel {
+  display: none;
+}
+.linkContainer.active {
+  color: #000000;
+  background-color: var(--sidebar-active-item-bg);
+  border-radius: 8px;
+}

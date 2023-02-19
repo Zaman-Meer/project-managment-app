@@ -1,0 +1,45 @@
+.columnContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px;
+  background-color: var(--light-gray-bg);
+  border-radius: 6px;
+  height: auto;
+  width: 216px;
+  min-width: 216px;
+}
+.header {
+  width: 100%;
+  color: var(--secondary-light-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 8px;
+  border-bottom: 1px solid var(--secondary-light-color);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.header .type {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+}
+.header .menu {
+  margin-left: auto;
+}
+
+.taskContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 10px;
+  width: 100%;
+  min-height: 200px;
+}

@@ -1,0 +1,95 @@
+/* ===== Sidebar ===== */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 270px;
+  height: 100%;
+  min-height: 100vh;
+  background: var(--white-bg);
+  transition: var(--tran-05);
+  z-index: 100;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-right: 2px solid #f5f5f5;
+  z-index: 10;
+}
+
+.sidebar.close {
+  width: 88px;
+}
+.sidebar .dropdown {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--secondary-color);
+  overflow: hidden;
+  height: 22px;
+  transition: all 0.5s;
+}
+.dropdown .status {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #27e1bf;
+}
+.sidebar.close .dropdown {
+  display: none;
+}
+
+.sidebar.close .toggle {
+  transform: rotate(180deg);
+}
+
+.sidebar .sidebarHeader {
+  width: 100%;
+  height: 78px;
+  display: flex;
+  align-self: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 10px 27px 30px;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.sidebar .sidebarMenu {
+  width: 100%;
+  height: 100%;
+  max-height: 85vh;
+  padding: 26px 15px 20px 15px;
+  margin-bottom: 50px;
+  overflow-y: auto;
+}
+.sidebar .sidebarMenu::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar .sidebarMenu .footer {
+  height: 100%;
+  width: 100%;
+  padding: 16px 0;
+  margin-top: 16px;
+  border-top: 1px solid var(--secondary-light-color);
+}
+
+.mobileMenu {
+  width: 32px;
+  position: absolute !important;
+  top: 20px;
+  left: 20px;
+  z-index: 99;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .sidebar {
+    width: 270px;
+  }
+}

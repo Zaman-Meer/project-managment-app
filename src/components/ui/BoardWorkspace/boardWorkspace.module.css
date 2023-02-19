@@ -1,0 +1,10 @@
+.boardContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  column-gap: 10px;
+  flex: 1;
+  padding: 24px 30px;
+  overflow: auto;
+  width: 100%;
+}
